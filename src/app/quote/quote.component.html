@@ -1,8 +1,8 @@
 <h3>Welcome to Great quotes App</h3>
 <p>This is the place to immortalize yourself by coming up with an amazing quote or sharing a quote by someone else that inspires you. </p>
 <div *ngFor="let quote of quotes; let i = index">
-    <h5> Posted by: {{quote.name}}</h5>
-    <p>{{quote.quote}}</p>
+    <h6> Posted by: {{quote.name}}</h6>
+    <p>Date posted: {{quote.date}}</p>
     <app-quote-details [quote]="quote"></app-quote-details>
     <button class="btn btn-success"(click)="upVote(i)">Upvote {{quote.upVote}}</button>
     <button class="btn btn-danger"(click)="downVote(i)">Downvote {{quote.downVote}}</button>
