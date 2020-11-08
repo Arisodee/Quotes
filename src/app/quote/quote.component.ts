@@ -13,6 +13,24 @@ export class QuoteComponent implements OnInit {
     new Quote('Barbara Charlotte', 'There are basically two types of people. People who accomplish things, and people who claim to have accomplished things. The first group is less crowded.','Mark Twain', new Date(2020,11,5)),
   ];
 
+  upVote (index){
+    this.quotes[index].upVote++;
+  }
+
+  downVote (index){
+    this.quotes[index].downVote++;
+  }
+
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
