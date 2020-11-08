@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-/* body {
+body {
     background-color:black;
     color: whitesmoke;
-} */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn{
+    margin:10px;
+}
+.row{
+    margin-top: 40px;
+}
