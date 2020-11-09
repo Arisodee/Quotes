@@ -1,8 +1,8 @@
 # Quotes
-### Ariso Okanga
-
-## Description
 This application allows users to post quotes, vote for the quotes they like and vote against the quotes they dislike.
+
+### Author
+Ariso Okanga
 
 ## Live Link 
 
