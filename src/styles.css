@@ -15,17 +15,6 @@ body {
 .span{
     font-size: 25px;
 }
-.quote{
-    border: 2px solid whitesmoke;
-    font-family: cursive;
-    font-style: italic;
-    margin: 10px, 0px;
-    padding: 5px;
-    font-size: 20px;
-    background-color: whitesmoke;
-    color: black;
-    font-weight: bold;
-}
 .bestquote{
     margin-left: 20px;
 }
