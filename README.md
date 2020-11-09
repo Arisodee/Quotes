@@ -5,7 +5,7 @@ This application allows users to post quotes, vote for the quotes they like and 
 Ariso Okanga
 
 ## Live Link 
-https://arisodee.github.io/quotes/
+https://arisodee.github.io/Quotes/
 
 ## User
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
