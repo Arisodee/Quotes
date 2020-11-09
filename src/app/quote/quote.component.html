@@ -1,11 +1,25 @@
-<h2>Quotes App</h2>
-<p><span class="span">Let's share some insprational quotes!</span></p>
-<div *ngFor="let quote of quotes; let i = index">
-    <h6> Posted by: {{quote.name}}</h6>
-    <p>Date posted: {{quote.date}}</p>
-    <app-quote-details [quote]="quote"></app-quote-details>
-    <button class="btn btn-success"(click)="upVote(i)">Upvote {{quote.upVote}}</button>
-    <button class="btn btn-danger"(click)="downVote(i)">Downvote {{quote.downVote}}</button>
-    <button class="btn btn-primary"(click) = "deleteQuote($event,i)">Delete</button>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Quotes App</h2>
+        <p><span class="span">Let's share some insprational quotes!</span></p>
+        <div *ngFor="let quote of quotes; let i = index">
+            <h6> Posted by: {{quote.name}}</h6>
+            <p>Date posted: {{quote.date}}</p>
+            <app-quote-details [quote]="quote"></app-quote-details>
+            <button class="btn btn-success"(click)="upVote(i)">Upvote {{quote.upVote}}</button>
+            <button class="btn btn-danger"(click)="downVote(i)">Downvote {{quote.downVote}}</button>
+            <button class="btn btn-primary"(click) = "deleteQuote($event,i)">Delete</button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    <div>
+        <h6>{{author}}</h6>
+        <p>{{quote}}</p>
+        <button class="btn btn-success">Likes {{bestquote}}</button>
+        <button class="btn btn-danger">Dislikes {{worstquote}}</button>
+        <button class="btn btn-primary"(click) = "bestQuote()">Best quote</button>
+        
+    </div>
 </div>
-

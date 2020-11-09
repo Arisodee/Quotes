@@ -5,7 +5,7 @@ import { Quote } from '../quote';
   selector: 'app-quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
-})
+}) 
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
@@ -14,7 +14,10 @@ export class QuoteComponent implements OnInit {
   ];
 
   addNewQuote(quote){
-        this.quotes.push(quote)
+    quote.name= quote.name;
+    quote.quote= quote.quote;
+    quote.author= quote.author;
+    this.quotes.push(quote)
   }
   upVote (index){
     this.quotes[index].upVote++;
@@ -30,6 +33,21 @@ export class QuoteComponent implements OnInit {
 
       if (toDelete){
         this.quotes.splice(index,1)
+      }
+    }
+  }
+  bestquote: number;
+  worstquote: number;
+  quote:string;
+  author:string;
+  bestQuote(){
+    this.bestquote=0;
+    for(let i = 0; i < this.quotes.length; i++){
+      if (this.quotes[i].upVote>this.bestquote){
+        this.bestquote = this.quotes[i].upVote;
+        this.worstquote = this.quotes[i].downVote;
+        this.quote = this.quotes[i].quote;
+        this.author = this.quotes[i].author;
       }
     }
   }
