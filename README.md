@@ -1,5 +1,14 @@
 # Quotes
+### Ariso Okanga
 
+## Description
+This application allows users to post quotes, vote for the quotes they like and vote against the quotes they dislike.
+
+## Live Link 
+
+https://
+
+## User
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
@@ -14,14 +23,30 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
 
-## Running end-to-end tests
+* git clone https://github.com/Arisodee/Quotes.git
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* cd quotes
 
-## Further help
+* code . or atom . depending on the text editor you want to work with.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies Used
+
+* [HTML5](https://github.com/topics/html5)
+* [CSS](https://github.com/topics/css3)
+* [AngulerCLI]
+* markdown
+* [Bootstrap](https://github.com/topics/bootstrap)
+
+
+## Contact Information 
+
+For any questions and inquiries, contact me via email:
+* arisodee@gmail.com
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+Copyright (c) 2020 *ArisoOkanga*
