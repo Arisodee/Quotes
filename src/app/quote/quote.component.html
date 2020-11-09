@@ -4,7 +4,7 @@
         <p><span class="span">Let's share some insprational quotes!</span></p>
         <div *ngFor="let quote of quotes; let i = index">
             <h6> Posted by: {{quote.name}}</h6>
-            <p>Date posted: {{quote.date| dateCount}} days ago</p>
+            <p>Posted: {{quote.date| dateCount}} days ago</p>
             <app-quote-details [quote]="quote"></app-quote-details>
             <button class="btn btn-success"(click)="upVote(i)">Upvote {{quote.upVote}}</button>
             <button class="btn btn-danger"(click)="downVote(i)">Downvote {{quote.downVote}}</button>
